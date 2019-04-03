@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm install'                 
+                echo "Install success!!!"
+
             }
         }
         stage('Test') { 
